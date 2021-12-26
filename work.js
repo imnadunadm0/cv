@@ -4,7 +4,7 @@ var playlist = [
 	{
 		"song"    : "ADM Redio",
 		"album"   : "Roamantic",
-		"artist"  : "Beatiful songs",
+		"artist"  : " 🖤 Song collections 🖤",
 		"artwork" : "https://telegra.ph/file/bd6f75d47243867fc0741.jpg",
 		"mp3"     : "https://node-34.zeno.fm/x6gu78qhvf9uv?rj-ttl=5&rj-tok=AAABfe0IHL8A1x_URZTHZvMrLQ"
 	},
