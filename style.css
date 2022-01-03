@@ -14,11 +14,11 @@ body {
 
 .music-player {
   position: relative;
-  width: 350px;
-  height: 290px;
-  margin: 150px auto;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
+  width: 450px;
+  height: 390px;
+  margin: 250px auto;
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
   background: #222;
   overflow: hidden;
   z-index: 0;
