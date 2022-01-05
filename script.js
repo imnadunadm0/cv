@@ -9,7 +9,7 @@ $(document).ready(function(){
       poster: "https://i.imgur.com/sCbrzQa.png"
     },{
       title:"Lion FM",
-      artist:"Kurunegala, Sri Lanka",
+      artist:"Sri Lanka Redio",
       mp3:"https://node-28.zeno.fm/zq6tn92g8yzuv?rj-ttl=5&aw_0_req_lsid=dfbd2869cd252db93f4c6536a3eaf401&acu-uid=613961479433&bsw-uid=701085ac-4f1d-415c-b897-3240e145fff4&cto-uid=73fb5c14-0175-43de-b1b8-afa0b7cc49d2-61640c27-4c4b&adt-uid=cuid_4a627941-2c0c-11ec-b167-129d177c1666&amb-uid=3045925210743544192&rj-tok=AAABfg7uwNEAjdBdYFXBtOZaRA&aw-uid=dfbd2869cd252db93f4c6536a3eaf401&dyn-uid=04030001_61640cdb5e726&dbm-uid=CAESEJHpLHgmmGrWXZW8aWN4Deg&mm-uid=207e612d-bcdf-4600-bf64-266a886ec473&triton-uid=cookie%3A26156c30-f0ea-4a0a-9347-76b3b4dbea71&an-uid=7004144898073735794&ttd-uid=a386317d-e5ba-4677-8bce-06fb80761397",
       oga:"",
       poster: "https://zeno.fm/_next/image/?url=https%3A%2F%2Fimages.zeno.fm%2FXOfITQ0s7yLulLiUrBe7oJ8NKAR01_vmIvMeOWZWdi8%2Frs%3Afit%3A250%3A250%2Fg%3Ace%3A0%3A0%2FaHR0cHM6Ly9wcm94eS56ZW5vLmZtL2NvbnRlbnQvc3RhdGlvbnMvYWd4emZucGxibTh0YzNSaGRITnlNZ3NTQ2tGMWRHaERiR2xsYm5RWWdJQ1FvdEhWeEFzTUN4SU9VM1JoZEdsdmJsQnliMlpwYkdVWWdJQ1F3cnU2dFFrTW9nRUVlbVZ1YncvaW1hZ2UvP3Jlc2l6ZT0yNTB4MjUwJnVwZGF0ZWQ9MTY0MDkxMDAxMzAwMA.webp&w=256&q=75"
@@ -25,12 +25,59 @@ $(document).ready(function(){
 
     title:"sha fm",
     artist:"srilanka  redio ",
-    mp3:"",
+    mp3:"http://209.133.216.3:7073/stream/1/?listening-from-radio-garden=1641381807",
+    oga:"",
+    poster:""
+
+  },
+		  
+		    {
+
+    title:"hirufm",
+    artist:"srilanka  redio ",
+    mp3:"http://209.133.216.3:7018/;?listening-from-radio-garden=1641381937",
+    oga:"",
+    poster:""
+
+  },
+		    {
+
+    title:"Neth fm",
+    artist:"srilanka  redio ",
+    mp3:"http://69.46.24.226:7669/stream/;?listening-from-radio-garden=1641382081",
+    oga:"",
+    poster:""
+
+  },
+		    {
+
+    title:" Y fm",
+    artishttp://live.trusl.com:1180/;?listening-from-radio-garden=1641382205",
+    oga:"",
+    poster:""
+
+  },
+		    {
+
+    title:" Siyath fm",
+    artist:"srilanka  redio ",
+    mp3:"https://s9.voscast.com:9393/live?listening-from-radio-garden=1641382259",
     oga:"",
     poster:""
 
   },
   
+		  		    {
+
+    title:" Gold fm",
+    artist:"srilanka  redio ",
+    mp3:"http://209.133.216.3:7048/;stream.mp3?listening-from-radio-garden=1641382317",
+    oga:"",
+    poster:""
+
+  },
+		  
+		  
   ];
 
 
