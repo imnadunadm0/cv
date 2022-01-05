@@ -27,7 +27,7 @@ $(document).ready(function(){
     artist:"srilanka  redio ",
     mp3:"http://209.133.216.3:7073/stream/1/?listening-from-radio-garden=1641381807",
     oga:"",
-    poster:""
+    poster:"https://telegra.ph/file/ae12a46d7ea49b204b3a3.jpg"
 
   },
 		  
@@ -37,7 +37,7 @@ $(document).ready(function(){
     artist:"srilanka  redio ",
     mp3:"http://209.133.216.3:7018/;?listening-from-radio-garden=1641381937",
     oga:"",
-    poster:""
+    poster:"https://telegra.ph/file/70b4f297ea1c8c34fa026.jpg"
 
   },
 		    {
@@ -46,15 +46,15 @@ $(document).ready(function(){
     artist:"srilanka  redio ",
     mp3:"http://69.46.24.226:7669/stream/;?listening-from-radio-garden=1641382081",
     oga:"",
-    poster:""
+    poster:"https://telegra.ph/file/08781c69ea7bfff22eaa7.jpg"
 
   },
 		    {
 
     title:" Y fm",
-    artishttp://live.trusl.com:1180/;?listening-from-radio-garden=1641382205",
+    artist: "http://live.trusl.com:1180/;?listening-from-radio-garden=1641382205",
     oga:"",
-    poster:""
+    poster:"https://telegra.ph/file/08781c69ea7bfff22eaa7.jpg",
 
   },
 		    {
@@ -63,7 +63,7 @@ $(document).ready(function(){
     artist:"srilanka  redio ",
     mp3:"https://s9.voscast.com:9393/live?listening-from-radio-garden=1641382259",
     oga:"",
-    poster:""
+    poster:"https://telegra.ph/file/9913f9db1ecf1de36dd36.jpg"
 
   },
   
@@ -73,7 +73,7 @@ $(document).ready(function(){
     artist:"srilanka  redio ",
     mp3:"http://209.133.216.3:7048/;stream.mp3?listening-from-radio-garden=1641382317",
     oga:"",
-    poster:""
+    poster:"https://telegra.ph/file/8f712676f92b1248c982c.jpg"
 
   },
 		  
