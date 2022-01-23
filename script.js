@@ -2,11 +2,11 @@ $(document).ready(function(){
 
 
   var playlist = [{
-      title:"ADM FM -by nadun ",
-      artist:"nadun",
+      title:"ADM FM  ",
+      artist:"nadun-adm",
       mp3:"https://node-25.zeno.fm/x6gu78qhvf9uv?rj-ttl=5&rj-tok=AAABfg69EU0A_t7Jv40VYGnbLw",
       oga:"",
-      poster: "https://i.imgur.com/sCbrzQa.png"
+      poster: "https://telegra.ph/file/6deb0b73ca49e05589b73.jpg"
     },{
       title:"Lion FM",
       artist:"Sri Lanka Redio",
