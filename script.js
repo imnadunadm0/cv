@@ -13,7 +13,7 @@ $(document).ready(function(){
 
     title:"Adm -Fench Hits ",
     artist:"Nadun -adm",
-    mp3:"http://209.133.216.3:7018/;?listening-from-radio-garden=1641381937",
+    mp3:"http://node-06.zeno.fm/0da209qhvf9uv?rj-ttl=5&rj-tok=AAABfp6Ngm0An7vbsFj-_RwQsQ",
     oga:"",
     poster:"https://telegra.ph/file/bf34fb09e831c7763eaf4.jpg"
 
