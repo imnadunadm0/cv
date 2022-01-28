@@ -7,7 +7,19 @@ $(document).ready(function(){
       mp3:"https://node-25.zeno.fm/x6gu78qhvf9uv?rj-ttl=5&rj-tok=AAABfg69EU0A_t7Jv40VYGnbLw",
       oga:"",
       poster: "https://telegra.ph/file/6deb0b73ca49e05589b73.jpg"
-    },{
+    },
+
+{
+
+    title:"Adm -Fench Hits ",
+    artist:"Nadun -adm",
+    mp3:"http://209.133.216.3:7018/;?listening-from-radio-garden=1641381937",
+    oga:"",
+    poster:"https://telegra.ph/file/bf34fb09e831c7763eaf4.jpg"
+
+  },
+
+{
       title:"Lion FM",
       artist:"Sri Lanka Redio",
       mp3:"https://node-28.zeno.fm/zq6tn92g8yzuv?rj-ttl=5&aw_0_req_lsid=dfbd2869cd252db93f4c6536a3eaf401&acu-uid=613961479433&bsw-uid=701085ac-4f1d-415c-b897-3240e145fff4&cto-uid=73fb5c14-0175-43de-b1b8-afa0b7cc49d2-61640c27-4c4b&adt-uid=cuid_4a627941-2c0c-11ec-b167-129d177c1666&amb-uid=3045925210743544192&rj-tok=AAABfg7uwNEAjdBdYFXBtOZaRA&aw-uid=dfbd2869cd252db93f4c6536a3eaf401&dyn-uid=04030001_61640cdb5e726&dbm-uid=CAESEJHpLHgmmGrWXZW8aWN4Deg&mm-uid=207e612d-bcdf-4600-bf64-266a886ec473&triton-uid=cookie%3A26156c30-f0ea-4a0a-9347-76b3b4dbea71&an-uid=7004144898073735794&ttd-uid=a386317d-e5ba-4677-8bce-06fb80761397",
