@@ -19,7 +19,7 @@
  // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
  // This is using the built-in support of the plain video element, without using hls.js.
   else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = 'http://cdncities.com/deranalive/deranalive/playlist.m3u8';
+    video.src = 'https://dammikartmp.tulix.tv/slrc1/slrc1/chunklist_w1103026625.m3u8';
     video.addEventListener('canplay',function() {
       video.play();
     });
