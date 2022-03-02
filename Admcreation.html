@@ -2,14 +2,14 @@
 <html>
     <head>
         <title>Dash.js Rocks</title>
-        
+ <body>       
  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 <video id="video"></video>
 <script>
   if(Hls.isSupported()) {
     var video = document.getElementById('video');
     var hls = new Hls();
-    hls.loadSource('http://cdncities.com/deranalive/deranalive/playlist.m3u8');
+    hls.loadSource('https://dammikartmp.tulix.tv/slrc1/slrc1/chunklist_w1103026625.m3u8');
     hls.attachMedia(video);
     hls.on(Hls.Events.MANIFEST_PARSED,function() {
       video.play();
