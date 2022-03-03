@@ -10,34 +10,73 @@
 <title>Live</title>
  </head>
 <style>
- html, body {
-  width: 100%;
+html {
   height:100%;
 }
 
 body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+  margin:0;
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
 }
  </style>
 
   <body>
 
-<h1> Live TV<h1>
-<SCRIPT> function passWord() { var testV = 1; var pass1 = prompt('Please Enter your password',' '); while (testV < 3) { if (!pass1)  history.go(-1); if (pass1.toLowerCase() == "12345") { alert('Password correct !'); window.open('Tv.html'); break ; }  testV+=1; var pass1 =  prompt('Accès denied - Wrong Password.','Password'); } if (pass1.toLowerCase()!="Your Password" & testV ==3)  history.go(-1); return " "; }  </SCRIPT> <CENTER> <FORM> <input type="button" value="Page Protected by Password" onClick="passWord()"> </FORM> </CENTER>
+
+<SCRIPT> function passWord() { var testV = 1; var pass1 = prompt('Please Enter your password',' '); while (testV < 3) { if (!pass1)  history.go(-1); if (pass1.toLowerCase() == "12345") { alert('Password correct !'); window.open('Tv.html'); break ; }  testV+=1; var pass1 =  prompt('Accès denied - Wrong Password.','Password'); } if (pass1.toLowerCase()!="Your Password" & testV ==3)  history.go(-1); return " "; }  </SCRIPT>
+   <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<div class="content">
+  <CENTER> <FORM> <input type="button" value="Page Protected by Password" onClick="passWord()"> </FORM> </CENTER>
+</div>
+   
 </body>
 
 </html>
