@@ -1,0 +1,73 @@
+<html>
+<head>
+
+<meta name ="viewport" content="width=device-width initial scale=1"/>
+<link rel="stylesheet" href='https://www.w3schools.com/lib/w3.css'/>
+  <meta charset="UTF-8">
+
+
+    
+    <style>
+.bg {
+     background-color: antiquewhite;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: content-box;
+}
+.bt {
+    
+    background-color: aqua;
+    
+   
+   
+}
+.one{
+
+    text-align: center;
+    
+}
+.two{
+    text-align: center;
+}
+.ree{
+    text-align: center;
+}
+     
+    </style>
+
+</head>
+
+<body class="bg">
+
+
+
+
+<h1 class="one">TEX LOGO MAKER</h1>
+<h2 class="two">essy to use</h2>
+
+<a href=("https://t.me/singledeveloper")><p class="ree">This API credits goes to single developer🖤</p></a>
+<p>Test one 😇</p>
+<br>
+<br>
+<br>
+<center><button style="width: 145px;height: 0px100;" class="bt" onclick="myFunction()">start now!</button></center>
+<br>
+<br>
+<br>
+  
+  <center><button style="width: 145px;height: 0px100;" class="bt" onclick="myFunction1()">start now!</button></center>
+<script>
+  
+var X =prompt("Please input Text");
+function myFunction() {
+  location.href = "https://single-developers.up.railway.app"+("/")+("logo?name=")+(X);
+}
+  function myFunction1() {
+  location.href = "https://single-developers.up.railway.app"+("?")+("write=")+(X);
+}
+  
+</script>
+
+</body>
+</html>
