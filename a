@@ -58,6 +58,8 @@
   
   <center><button style="width: 145px;height: 0px100;" class="bt" onclick="myFunction1()">start now!</button></center>
 <script>
+<center><button style="width: 145px;height: 0px100;" class="bt" onclick="myFunction2()">start now!</button></center>
+<script>
   
 var X =prompt("Please input Text");
 function myFunction() {
@@ -66,7 +68,9 @@ function myFunction() {
   function myFunction1() {
   location.href = "https://single-developers.up.railway.app"+("?")+("write=")+(X);
 }
-  
+function myFunction2() {
+  location.href = "https://single-developers.up.railway.app"+("/")+("logo?name=")+(X);
+  }
 </script>
 
 </body>
