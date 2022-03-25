@@ -2,108 +2,177 @@
   <head>
   <title></title>
   
-  </head>
+
   <style>
-  * {
-  box-sizing: border-box;
-  line-height: 1.5;
-  font-family: 'Open Sans', sans-serif;
-}
-
-img {
-  max-width: 100%;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: #444;
-}
-
-.card {
-  position: relative;
-  background: #333;
-  width: 400px;
-  height: 75vh;
-  border-radius: 6px;
-  padding: 2rem;
-  color: #aaa;
-  box-shadow: 0 .25rem .25rem rgba(0,0,0,0.2),
-    0 0 1rem rgba(0,0,0,0.2);
-  overflow: hidden;
   
-  &__image-container {
-    margin: -2rem -2rem 1rem -2rem;
-  }
-  
-  &__line {
-  opacity: 0;
-  animation: LineFadeIn .8s .8s forwards ease-in;
-  }
-
-  &__image {
-    opacity: 0;
-    animation: ImageFadeIn .8s 1.4s forwards;
-  }
-
-  &__title {
-    color: white;
-    margin-top: 0;
-    font-weight: 800;
-    letter-spacing: 0.01em;
-  }
-  
-  &__content {
-    margin-top: -1rem;
-    opacity: 0;
-    animation: ContentFadeIn .8s 1.6s forwards;
-  }
-  
-  &__svg {
-    position: absolute;
-    left: 0;
-    top: 115px;
-  }
+{
+	background: #f1f2f6;
+	margin: 0;
+	padding: 0;
 }
 
-@keyframes LineFadeIn {
-  0% { opacity: 0; d: path("M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 "); stroke: #fff; }
-  50% { opacity: 1; d: path("M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300"); stroke: #888BFF; }
-  100% { opacity: 1; d: path("M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400"); stroke: #545581; }
+.image-area
+{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
 }
 
-@keyframes ContentFadeIn {
-  0% { transform: translateY(-1rem); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
+.img-wrapper
+{
+	width: 300px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
 }
 
-@keyframes ImageFadeIn {
-  0% { transform: translate(-.5rem, -.5rem) scale(1.05); opacity: 0; filter: blur(2px); }
-  50% { opacity: 1; filter: blur(2px); }
-  100% { transform: translateY(0) scale(1.0); opacity: 1; filter: blur(0); }
+.img-wrapper:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 180%;
+	height: 100%;
+	width: 100%;
+	background: rgba(255,255,255,.3);
+	z-index: 1;
+	transform: skew(45deg);
+	transition: .5s;
+}
+
+.img-wrapper:hover:before
+{
+	left: -180%;
+}
+
+.img-wrapper img
+{
+	height: 400px;
+	width: 300px;
+	filter: grayscale(100%);
+	transition: 2s;
+}
+.img-wrapper:hover img
+{
+	filter: grayscale(0%);
+	transform: scale(1.1);
+}
+
+.img-wrapper h2
+{
+	background: tomato;
+	font-family: Poppins;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 10px 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	transform: perspective(400px) rotateY(90deg);
+	transform-origin: right;
+	transition: 1s;
+}
+
+.img-wrapper:hover h2
+{
+	transform: perspective(400px) rotateY(0deg);
+}
+
+.img-wrapper ul
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: rgba(255,255,255,0);
+}
+
+.img-wrapper ul li
+{
+	background: #333;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 40px;
+	transform: perspective(800px) rotateY(90deg);
+	transition: .5s;
+	transform-origin: left;
+}
+
+.img-wrapper:hover ul li
+{
+	transform: perspective(800px) rotateY(0deg);
+}
+
+.img-wrapper:hover ul li:nth-child(1)
+{
+	transition-delay: .2s;
+}
+
+.img-wrapper:hover ul li:nth-child(2)
+{
+	transition-delay: .6s;
+}
+
+.img-wrapper:hover ul li:nth-child(3)
+{
+	transition-delay: .8s;
+}
+
+.img-wrapper:hover ul li:nth-child(4)
+{
+	transition-delay: 1s;
+}
+
+.img-wrapper ul li a
+{
+	color: tomato;
+	background: rgba(255,255,255,0);
+}
+
+.img-wrapper ul li i
+{
+	color: tomato;
+	background: rgba(255,255,255,0);
+}
+
+.img-wrapper ul li i:hover
+{
+	color: #fff;
+	background: rgba(255,255,255,0);
 }
   </style>
-  
+    </head>
  <body>
- <div class="container">
-  <div class="card">
-     <div class="card__image-container">
-       <img class="card__image" src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80" alt="">
-    </div>
-      
-      <svg class="card__svg" viewBox="0 0 800 500">
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Profile Image hover effect</title>
+	<link rel="stylesheet" href="style.css">
 
-        <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
-        <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
-      </svg>
-    
-     <div class="card__content">
-       <h1 class="card__title">Lorem ipsum</h1>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor praesentium at quod autem omnis, amet eaque unde perspiciatis adipisci possimus quam facere illo et quisquam quia earum nesciunt porro.</p>
-    </div>
-  </div>
-</div>
+	<!-- ------------ Font awesome CDN link ------------------ -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+	<div class="image-area">
+		<div class="img-wrapper">
+			<img src="https://images.pexels.com/photos/1220757/pexels-photo-1220757.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Atul Prajapati">
+			<h2>David james</h2>
+			<ul>
+				<li><a href="https://github.com/atuljustano"><i class="fab fa-github"></i></a></li>
+				<li><a href="https://www.instagram.com/atulkprajapati2000/"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="https://twitter.com/atuljustano"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="https://www.youtube.com/channel/UCf-KfxuY8PZBSD_8RW2nYsw"><i class="fab fa-youtube"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
 </body>
 </html>
