@@ -9,7 +9,7 @@ body {
 
 @media (min-width: 992px) {
   .slider, .slide {
-    height: 120vh;
+    height: 150vh;
   }
 }
 
