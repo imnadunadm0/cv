@@ -9,7 +9,7 @@ body {
 
 @media (min-width: 992px) {
   .slider, .slide {
-    height: 120vh;
+    height: 130vh;
   }
 }
 
@@ -19,7 +19,7 @@ body {
 }
 .slide .slide__img {
   width: 100%;
-  height: auto;
+  height: 130vh;
   overflow: hidden;
 }
 @media (min-width: 992px) {
