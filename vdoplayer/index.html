@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Video player</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="box text-center" dir="ltr">
+    <h4 class="display-2 text-center main">player</h4>
+    <div class="neo-video-player" id="popout-video-player">
+
+        <div class="video-control-part">
+            <div class="video-control-general-part">
+                <div class="play-btn video-neu-btn"></div>
+                <div class="video-neu-btn drop-btn">
+                    <div class="box-sound">
+                        <div class="volume">
+                            <div class="bar-volume"></div>
+                        </div>
+                    </div>
+                    <div class="sound-btn video-neu-btn"></div>
+                </div>
+            </div>
+            <div class="video-control-bar-part">
+                <div class="bar-bg">
+                    <div class="bar-progress">
+                        <div class="bar-time">
+                            <div class="bar-time-box"><span class="current">00:00</span><span> / </span><span class="duration">00:00</span></div>
+                            <div class="bar-pin"></div>
+                        </div>
+                    </div>
+                    <div class="bar-buffer"></div>
+                </div>
+            </div>
+            <div class="video-control-nav-part">
+                <a id="download-video" href=""  rel="nofollow" download><div class="download-btn video-neu-btn"></div></a>
+                <div class="setting-btn video-neu-btn">
+                    <div class="fastFwd-box">
+                        <input class="btn fastFwd" type="button" value="Speed : 1x">
+                    </div>
+                </div>
+                <div class="fullscreen-btn video-neu-btn"></div>
+            </div>
+        </div>
+        
+        <video class="video-element" id="video-element" preload="auto">
+        <source src="S02E08.WEBRip.x264-ION10.mp4?st=ckk3OGGelRh5MFNwI6gtRA&e=1652762914">
+        </video>
+        
+        </div>
+
+        <!--thank-->
+        <p class="mb-0 mt-3">edIted By <a href="https://nadunadm.tk">"Nadun adm"</a> 
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
