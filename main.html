@@ -485,6 +485,95 @@ text-align: center;
 
 
     </section>
+	<!--youtube-->
+	<div>
+	<h1>YouTube Player Embed API</h1>
+<div videoID="9iGA6xy15W4" startTime="1330" endTime="1466" 
+     height="309" width="550" id="youtube-player">
+	
+	<script> 
+	
+	<!-- specify the various video parameters in a DIV tag -->
+
+
+
+var node = "youtube-player";
+
+// Append the YouTube IFRAME API Script
+var youtube = document.createElement('script');
+youtube.type = "text/javascript";
+youtube.src = "//www.youtube.com/iframe_api";
+
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(youtube, s);
+
+var player;
+
+// Read all the parameter of the DIV tag
+var params = document.getElementById(node);
+
+var startTime = params.getAttribute("startTime");
+var endTime = params.getAttribute("endTime");
+var videoID = params.getAttribute("videoID");
+var playerHeight = params.getAttribute("height");
+var playerWidth = params.getAttribute("width");
+
+// Prepare the YouTube Player
+// We set rel=0 and showinfo=1 to hide related videos & info bar
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player(node, {
+    height: playerHeight,
+    width: playerWidth,
+    playerVars: {
+      'autoplay': 1,
+      'rel': 0,
+      'showinfo': 0,
+      'hidecontrols': 1,
+    },
+    events: {
+      'onReady': loadVideo
+
+    }
+    
+  });
+}
+
+// When the player is ready, we load the video
+// Using cueVideoById and not loadVideoById as the
+// former function will not autoplay the video.  
+function loadVideo(e) {
+  e.target.cueVideoById({
+    videoId: videoID,
+    startSeconds: startTime,
+    endSeconds: endTime
+  });
+}
+
+ </script>
+	
+	<style>
+	// http://ctrlq.org/code/19452-embed-youtube-with-javascript
+
+#youtube-player { 
+display:block;
+  margin: 0 auto; 
+  // width: 100%; 
+  // height: 100%;
+    position: absolute;
+  // top:0;
+  left:0;
+  right:0;
+}
+
+h1 { 
+text-align: center;
+}
+	</style
+</div>
+	
+	</div>
+	
                             <!--CONTACT ME  -->
  
 
