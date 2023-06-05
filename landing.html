@@ -1,0 +1,68 @@
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Password Lock</title>
+  <link rel="stylesheet" href="./style.css">
+<style>
+  body {
+  font-family: "Open Sans";
+  background-color: #a9a9a9;
+  color: #000000;
+  line-height: 1.618em;  
+}
+.container {
+	width: 90%;
+	align-items: center;
+	text-align: center;
+}
+.inputField1 {
+	font-size: medium;
+}
+.button1 {	
+	border-radius: 12px;
+	width: 90px;
+	font-size: large;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+.button1:hover {
+	background-color: green;
+	color: #ffffff;
+}
+
+label {
+	font: normal 18px Georgia
+  </style>
+</head>
+
+<body>
+<p>Hint, passcode is 1234
+<!-- This section contains the input box for the user to enter the code for access. --> 
+<div class="container">
+    <div>
+      <label>Enter your passcode</label><br />
+      <input type="password" name="password" maxlength="4" class="inputField1" id="password" placeholder="enter code here" required/>
+
+    </div>    
+
+
+    <!-- This is the "Submit" button that will call the "onSubmit" function on the javascript page. -->
+    <button class="button1" id="button1" onclick="onSubmit()">Submit</button>
+    <br><br>
+
+    <!-- This is the second button, it's hidden until the correct code is entered in the input text box from above. --> 
+    <a target="_blank" class="button2" id="button2" href="https://www.freecodecamp.org/">Access Granted <br/> Click to launch <br/>Free Code Camp</a>  	  
+ <!-- Closing the "container" div.-->
+
+
+<!--NOTE:-->
+<!-- 
+    if you changed the passcode length on the "script.js" page, make sure to adjust the length 
+		on this page at the "maxlength" setting above. 
+------------------------------------------------------------------------------------------------
+      Javascript reference. 
+      This must be at the bottom of the page. 
+      It cannot be placed in the "Head" section.
+-->
+  <script  src="./script.js"></script>
+
+</body>
